@@ -5,6 +5,7 @@ namespace App\Nova;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Panel;
 use Spatie\NovaTranslatable\Translatable;
@@ -46,10 +47,9 @@ class Post extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('title'),
-
             Translatable::make([
-                Text::make('text')
+                Text::make('title'),
+                Trix::make('text'),
             ]),
         ];
     }

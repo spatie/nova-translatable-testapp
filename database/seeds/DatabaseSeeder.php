@@ -14,11 +14,15 @@ class DatabaseSeeder extends Seeder
 
         $post = new Post();
 
-        $post->title = 'testpost';
+        $post->setTranslations('title', [
+            'nl' => 'mijn testpost titel',
+            'en' => 'my testpost title',
+        ]);
+
 
         $post->setTranslations('text', [
-            'nl' => 'mijn testpost',
-            'en' => 'my testpost',
+            'nl' => 'mijn testpost tekst',
+            'en' => 'my testpost text',
         ]);
 
         $post->save();
