@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22a3a43d03ed287447e3371d90e023ce",
+    "content-hash": "15750324c9932ff5eba91628c5b2c0c8",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -1564,26 +1564,26 @@
         },
         {
             "name": "spatie/laravel-translatable",
-            "version": "2.2.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-translatable.git",
-                "reference": "107df7d9a75046a7552a995ed3d1971a9f98f833"
+                "reference": "e13f09e329c406915258d211e70384be121e82b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/107df7d9a75046a7552a995ed3d1971a9f98f833",
-                "reference": "107df7d9a75046a7552a995ed3d1971a9f98f833",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/e13f09e329c406915258d211e70384be121e82b8",
+                "reference": "e13f09e329c406915258d211e70384be121e82b8",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.0",
                 "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
-                "phpunit/phpunit": "^6.3|^7.0"
+                "phpunit/phpunit": "^7.4"
             },
             "type": "library",
             "extra": {
@@ -1632,26 +1632,21 @@
                 "spatie",
                 "translate"
             ],
-            "time": "2018-08-24T09:34:12+00:00"
+            "time": "2018-10-17T22:44:14+00:00"
         },
         {
             "name": "spatie/nova-translatable",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/nova-translatable.git",
-                "reference": "82599e94edd54ca174c1c9c413507e9680e72e85"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/nova-translatable/zipball/82599e94edd54ca174c1c9c413507e9680e72e85",
-                "reference": "82599e94edd54ca174c1c9c413507e9680e72e85",
-                "shasum": ""
+                "type": "path",
+                "url": "../nova-translatable",
+                "reference": "b3de4898716f5e4f4ba2381ac2a3f033e37c872c",
+                "shasum": null
             },
             "require": {
                 "laravel/nova": "*",
                 "php": ">=7.1.0",
-                "spatie/laravel-translatable": "^2.2"
+                "spatie/laravel-translatable": "^3.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1",
@@ -1671,7 +1666,11 @@
                     "Spatie\\NovaTranslatable\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Spatie\\NovaTranslatable\\Tests\\": "tests"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1687,8 +1686,7 @@
             "keywords": [
                 "laravel",
                 "nova"
-            ],
-            "time": "2018-10-09T08:49:47+00:00"
+            ]
         },
         {
             "name": "spatie/once",

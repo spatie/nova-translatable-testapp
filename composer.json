@@ -20,7 +20,6 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "spatie/laravel-tail": "^3.2",
-        "spatie/laravel-translatable": "^2.2",
         "spatie/nova-translatable": "dev-master"
     },
     "require-dev": {
