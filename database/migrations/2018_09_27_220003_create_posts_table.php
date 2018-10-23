@@ -12,6 +12,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->json('title');
             $table->json('text');
+            $table->json('country_code')->nullable();
             $table->timestamps();
         });
     }

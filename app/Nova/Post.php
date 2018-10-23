@@ -2,6 +2,8 @@
 
 namespace App\Nova;
 
+use Laravel\Nova\Fields\Country;
+use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
@@ -48,9 +50,10 @@ class Post extends Resource
             ID::make()->sortable(),
 
             Translatable::make([
-                Text::make('title'),
+                Text::make('Mijn titel', 'title'),
                 Trix::make('text'),
-            ]),
+                Country::make('Country', 'country_code'),
+            ])
         ];
     }
 

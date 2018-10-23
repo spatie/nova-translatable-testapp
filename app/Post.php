@@ -9,6 +9,6 @@ class Post extends Model
 {
     use HasTranslations;
 
-    public $translatable = ['title', 'text'];
+    public $translatable = ['title', 'text', 'country_code'];
 
 }
