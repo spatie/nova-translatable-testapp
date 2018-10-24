@@ -50,9 +50,8 @@ class Post extends Resource
             ID::make()->sortable(),
 
             Translatable::make([
-                Text::make('Mijn titel', 'title'),
+                Text::make('title'),
                 Trix::make('text'),
-                Country::make('Country', 'country_code'),
             ])
         ];
     }
